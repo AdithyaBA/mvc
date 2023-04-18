@@ -1,5 +1,6 @@
 const User = require("../models/user");
 const Order = require("../models/order");
+const user = require("../models/user");
 
 exports.getUserById = (req, res, next, id) => {
   User.findById(id).exec((err, user) => {
@@ -79,3 +80,15 @@ exports.pushOrderInPurchaseList = (req, res, next) => {
     }
   );
 };
+
+// Get All users
+exports.getAllUsers = (req, res) => {
+  User.find((err, users) => {
+    if(err){
+      return res.status(400).json({
+        error: "Unable to fetch all users"
+      })
+    }
+    return res.json(users)
+  })
+}

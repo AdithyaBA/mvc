@@ -5,7 +5,8 @@ const {
   getUserById,
   getUser,
   updateUser,
-  userPurchaseList
+  userPurchaseList,
+  getAllUsers
 } = require("../controllers/user");
 const { isSignedIn, isAuthenticated, isAdmin } = require("../controllers/auth");
 
@@ -20,5 +21,14 @@ router.get(
   isAuthenticated,
   userPurchaseList
 );
+
+// Get all users
+router.get("/getAllUsers", getAllUsers)
+
+// Test Router
+router.get("/testroute", isSignedIn, (req, res) => {
+  res.send("I am test route");
+  console.log(req.auth);
+})
 
 module.exports = router;
