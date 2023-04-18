@@ -1,0 +1,87 @@
+Required Softwares:
+1. NodeJS
+2. Robo 3T
+3. VSCode
+4. MongoDB
+-----------------------------------
+1. Installed Robo3T
+2. Installed MongoDB
+3. POSTMAN
+4. Installed NodeJS,
+5. Installed VSCode.
+------------------------------------
+Server Request Codes:
+ex: 200, 300, 301, 302, 400, 401, 404, 500
+---------------------------------------
+1. Created two folders, 1 for backend and 1 for frontend.
+2. Installed prettier to format the code in VS code.
+3. Design project structure coggle.it
+----------------------------------------
+1. Read expressJS documentation.
+2. installed express package.
+3. Installed nodemon.
+4. Installed package body-parser.
+5. created models, routes and controllers folders
+--------------------------------------------
+1. Installed mongoose package.
+2. Read mongoose documentation.
+3. Read about cryptography salt.(salt is used to generate random number).
+4. created user.js in models folder.
+5. created userSchema for name, lastname, email, password, role, userinfo, purchases and salt.
+7. Read about virtual.
+8. Read about UUID.
+9. Installed uuid package.
+10. Read about crypto.
+----------------------------------------------
+1. Created category schema with timestamps.
+2. Created product schema.
+3. Linked category Schema in product Schema.
+4. Create order Schema.
+-----------------------------------------------
+1. Created .env file.
+2. Connected our application to mongoDB.
+3. Installed dotenv package.
+4. Read about middlwares.
+5. Installed body-parser package.
+6. Installed cookie-parser.
+7. Installed cors.
+------------------------------------------------
+1. Created auth.js in routes folder and signout routes.
+2. Created auth.js in controller folder and written signout code.
+3. Read about Robo3T.
+4. Created signup route.
+5. Sent Signup data from POSTMAN and saved in MONGODB.
+6. Read express-validator documentation.
+7. Installed express-validator package.
+8. Validated name, email and password before storing signup data in MONGODB.
+------------------------------------------------------
+1. Installed jsonwebtoken package.
+2. Read jsonwebtoken documentation.
+3. Installed express-jwt package.
+4. Craeted signin route.
+5. Generated acces-token.
+6. Written code to clear cookie when signout button clicked. 
+7. Created isSignedIn route to check whether person is autherized or not.
+-----------------------------------------------------------
+1. Read param documentation.
+2. Created user.js for routes and controllers.
+3. Created api to get single user from MONGODB.
+4. Craeted api to get all users from MONGODB.
+5. Created api to update the user(PUT request).
+6. Read document about populate.
+-----------------------------------------------------------
+1. Created category route and controller.
+2. Created param for category.
+3. Create category, update category and delete category api's.
+------------------------------------------------------------
+1. Installed formidable, lodash package.
+2. Imported fs package.
+3. Create product api to insert product into DB.
+4. Created delete and update product api's.
+5. Documentation bulk-write.
+------------------------------------------------------------
+1. created order.js in route and controller.
+------------------------------------------------------------
+FRONTEND
+1. Installed ReactJS.
+2. Installed react-router-dom and query-string package.
