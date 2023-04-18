@@ -20,7 +20,7 @@ exports.signup = (req, res) => {
       });
     }
     res.json({
-      name: user.name,
+      firstName: user.firstName,
       email: user.email,
       id: user._id
     });
@@ -58,8 +58,8 @@ exports.signin = (req, res) => {
     res.cookie("token", token, { expiresAt: '10s' });
 
     //send response to front end
-    const { _id, name, email, role } = user;
-    return res.json({ token, user: { _id, name, email, role } });
+    const { _id, firstName, email, role } = user;
+    return res.json({ token, user: { _id, firstName, email, role } });
   });
 };
 
